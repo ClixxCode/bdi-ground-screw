@@ -1,0 +1,227 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  pageClass?: string;
+  customCss?: string;
+}
+
+const { 
+  title = "BDI Ground Screw", 
+  description = "BDI Ground Screw - Ground Screw Foundation Solutions",
+  pageClass = "",
+  customCss = ""
+} = Astro.props;
+
+// Determine asset path based on page depth
+const basePath = Astro.url.pathname.split('/').filter(Boolean).length > 0 ? '../' : '';
+---
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:site_name" content="BDI Ground Screw" />
+	<meta name="twitter:card" content="summary_large_image" />
+
+<link rel='dns-prefetch' href='https://js.hs-scripts.com' />
+<link rel='dns-prefetch' href='https://maps.googleapis.com' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+
+<style>img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}</style>
+<link rel='stylesheet' href='/wp-content/plugins/wprt-addons/assets/bauericons.css' />
+<link rel='stylesheet' href='/wp-content/plugins/js_composer/assets/css/js_composer.min.css' />
+<style>img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel='stylesheet' href='/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css' />
+<link rel='stylesheet' href='/wp-content/plugins/contact-form-7/includes/css/styles.css' />
+<link rel='stylesheet' href='/wp-content/plugins/show-hidecollapse-expand/assets/css/bg-show-hide.css' />
+<link rel='stylesheet' href='/wp-content/plugins/woocommerce/assets/css/brands.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/style.css' />
+<link rel='stylesheet' href='/wp-content/themes/ags/style.css' />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900&subset=latin' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/visual-composer.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/animate.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/animsition.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/slick.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/fontawesome.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/eleganticons.css' />
+<link rel='stylesheet' href='/wp-content/themes/bauer/assets/css/basicui.css' />
+<link rel='stylesheet' href='/wp-content/plugins/wprt-addons/assets/owl.carousel.css' />
+<link rel='stylesheet' href='/wp-content/plugins/wprt-addons/assets/cubeportfolio.min.css' />
+<link rel='stylesheet' href='/wp-content/plugins/wprt-addons/assets/magnific.popup.css' />
+<link rel='stylesheet' href='/wp-content/plugins/wprt-addons/assets/vegas.css' />
+<link rel='stylesheet' href='/wp-content/plugins/wprt-addons/assets/ytplayer.css' />
+<link rel='stylesheet' href='/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/animate.css/animate.min.css' />
+<link rel='stylesheet' href='/wp-content/plugins/js_composer/assets/css/lib/vc-linecons/vc_linecons_icons.min.css' />
+<link rel='stylesheet' href='/wp-content/plugins/js_composer/assets/css/lib/typicons/typicons.min.css' />
+
+<script is:inline src="/wp-includes/js/dist/hooks.min.js"></script>
+<script is:inline src="/wp-includes/js/jquery/jquery.min.js"></script>
+<script is:inline src="/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href='https://fonts.googleapis.com/css2?display=swap&family=Saira' rel='stylesheet'>
+
+<!-- GA Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-155291240-4', 'auto');
+ga('send', 'pageview');
+</script>
+
+<!-- Google Ads -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-11287192646"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-11287192646');
+gtag('config', 'AW-11287192646/stVzCJCn2s4YEMbIk4Yq', {'phone_conversion_number': '(636) 225-5011'});
+</script>
+
+<!-- Google Tag Manager -->
+<script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TV5SW52');</script>
+
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1633737900600759');
+</script>
+
+<!-- HubSpot -->
+<script is:inline class="hsq-set-content-id" data-content-id="standard-page">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+</script>
+
+<link rel="shortcut icon" href="/wp-content/uploads/2019/12/bdi-favicon-300x300.png" type="image/x-icon">
+
+<style id="egf-frontend-styles">h1, h2, h3, h4, h5 {font-family: 'Saira', sans-serif;font-style: normal;font-weight: 400;} h2 {line-height: 1.2;} h4 {font-size: 22px;margin-bottom: 10px;}</style>
+<style>.wpb_animate_when_almost_visible { opacity: 1; }</style>
+
+<Fragment set:html={customCss} />
+
+</head>
+
+<body data-rsssl=1 class={"top-bar-style-1 no-sidebar site-layout-full-width header-style-2 cur-menu-1 is-page no-padding-content footer-no-promo wpb-js-composer js-comp-ver-7.9 vc_responsive " + pageClass}>
+<div class="mobi-overlay"><span class="close"></span></div>
+<div id="wrapper" style="">
+    <div id="page" class="clearfix ">
+    	
+<Header />
+
+<div id="main-content" class="site-main clearfix" style="">
+    <div id="content-wrap">
+        <div id="site-content" class="site-content clearfix">
+        	<div id="inner-content" class="inner-content-wrap">
+							<article class="page-content">
+					
+<slot />
+
+				</article>
+			</div>
+        </div><!-- /#site-content -->
+    </div><!-- /#content-wrap -->
+</div><!-- /.main-content -->
+
+<Footer />
+
+	</div><!-- /#page -->
+</div><!-- /#wrapper -->
+
+<a id="scroll-top"></a>
+
+<!-- LP Event Tracking -->
+<script>
+if (window.location.pathname.indexOf('/contact-us/thank-you') != -1) {
+  gtag('event', 'conversion', {'send_to': 'AW-11287192646/XVZ9CO3s4c4YEMbIk4Yq'});
+  fbq('track', 'Contact');
+}
+</script>
+
+<script is:inline src="/wp-includes/js/dist/i18n.min.js"></script>
+<script is:inline src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js"></script>
+<script is:inline src="/wp-content/plugins/contact-form-7/includes/js/index.js"></script>
+<script is:inline src="/wp-content/themes/bauer/assets/js/jquery.easing.js"></script>
+<script is:inline src="/wp-content/themes/bauer/assets/js/slick.min.js"></script>
+<script is:inline src="/wp-content/themes/bauer/assets/js/animsition.min.js"></script>
+<script is:inline src="/wp-content/themes/bauer/assets/js/wow.min.js"></script>
+<script is:inline src="/wp-content/themes/bauer/assets/js/jquery.cookie.js"></script>
+<script is:inline src="/wp-content/themes/bauer/assets/js/main.js"></script>
+<script is:inline src="/wp-content/plugins/wprt-addons/assets/owl.carousel.min.js"></script>
+<script is:inline src="/wp-content/plugins/wprt-addons/assets/cubeportfolio.min.js"></script>
+<script is:inline src="/wp-content/plugins/wprt-addons/assets/magnific.popup.min.js"></script>
+<script is:inline src="/wp-content/plugins/wprt-addons/assets/main.js"></script>
+<script is:inline src="/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js"></script>
+<script is:inline async defer src="https://js.hs-scripts.com/9355246.js"></script>
+
+<!-- Google Translate Widget -->
+<div id="google_translate_element" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"></div>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,es,pt',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script is:inline src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+#google_translate_element {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.goog-te-gadget {
+  font-family: inherit !important;
+}
+.goog-te-gadget-simple {
+  border: none !important;
+  background: transparent !important;
+}
+</style>
+
+</body>
+</html>
