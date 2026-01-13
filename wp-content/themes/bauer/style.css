@@ -2835,7 +2835,7 @@ html.disable-scroll {
     display: block;
     border-radius: 50%;
     text-align: center;
-    background-color: #28c23e;
+    background-color: #cd3539;
     color: #f1f4f9;
 }
 
@@ -4489,12 +4489,12 @@ html.disable-scroll {
 
 .comment-edit-link {
     padding-left: 10px;
-    color: #28c23e;
+    color: #cd3539;
 }
 
 .unapproved {
     display: block;
-    color: #28c23e;
+    color: #cd3539;
     font-style: italic;
 }
 
@@ -4539,7 +4539,7 @@ html.disable-scroll {
 }
 
 .logged-in-as a {
-    color: #28c23e;
+    color: #cd3539;
 }
 
 .logged-in-as a:hover,
@@ -10705,7 +10705,7 @@ p.stars span a:focus {
     text-transform: uppercase;
     padding: 2px 20px;
     background-color: #d5f7da;
-    color: #28c23e;
+    color: #cd3539;
     z-index: 999;
 }
 
@@ -11452,7 +11452,7 @@ p.stars span a:focus {
 .woocommerce-page .shop_table.cart .coupon #coupon_code + button[type='submit'],
 .woocommerce-page .shop_table.cart .coupon + button[type='submit'] {
     padding: 12px 34px;
-    background-color: #28c23e;
+    background-color: #cd3539;
 }
 
 .woocommerce-page .shop_table.cart .coupon #coupon_code + button[type='submit']:hover,
