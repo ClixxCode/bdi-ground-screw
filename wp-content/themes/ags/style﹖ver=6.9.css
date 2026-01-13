@@ -1,0 +1,258 @@
+/*
+ Theme Name:   American Ground Screw
+ Description:  Custom Theme
+ Author:       Wooly Mammoth Design
+ Author URI:   http://woolymammothdesign.com
+ Template:     bauer
+ Text Domain:  wooly
+*/
+
+.product-detail-info-section-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 0.75em;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(145, 145, 151, 0.3);
+}
+.product-detail-info-section-subtitle {
+    width: 30%;
+    margin-top: 0rem;
+    margin-right: 1em;
+    margin-bottom: 0.3125rem;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    color: #12294a;
+    font-size: 1.875rem;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+.product-detail-info-section-text {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+	font-size: 1.475rem;
+	margin-top: 0rem;
+    margin-right: 1em;
+    margin-bottom: 0.3125rem;
+	line-height: 1.5em;
+}
+.product-detail-info-section-text ul, li {
+   list-style-type: disc;
+	padding: 0px 0px 0px 0px;
+    margin: 0 0 0px 0px;
+	line-height: 1.5em;
+	
+	
+
+}
+#top-bar {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.footer-promotion .bauer-subscribe {
+	display:none;
+	
+}
+.woo-single-post-class .summary h1 {
+    color: #414042;
+    font-size: 35px;
+    line-height: 10px;
+    margin: 0 0 15px 0;
+	font-weight:600;
+}
+.footer-grid .span_1_of_4 {
+    width: 30%;
+}
+
+/* Screw Animation */
+#home-top-banner {
+	padding: 120px 0;
+	height: calc(100vh - 122px);
+}
+#home-top-banner h1 {
+	font-size: 70px;
+	line-height: 80px;
+}
+#home-top-banner h4 {
+	margin-top: 30px;
+}
+.overflow-hidden {
+	overflow:hidden;
+}
+#screw-animation {
+		position: absolute;
+    right: 50%;
+	width: 70px;
+	padding: 0 36px;
+	margin: 0 auto 0;
+		overflow: hidden;
+	  box-sizing: content-box;
+	transform: translateY(-40%);
+	}
+	.screw-animation-inner {
+		width: 100%;
+	}
+	.absolute {
+		position: absolute;
+		width: 100%;
+		height: 90%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.screw {
+		position: relative;
+		width: 100%;
+	}
+	.ribbon {
+		background-size: cover;
+		background-repeat: repeat-x;
+		transition: background-position linear 10s;
+	}
+	.blue {
+		background-image: url("../../uploads/2020/01/blue-ribbon-4.png");
+		opacity: .9;
+	}
+
+	.green {
+		background-image: url("../../uploads/2020/01/green-ribbon-4.png");
+		opacity: .7;
+	}
+
+	/* initial ribbon turn */
+	@keyframes blue-turn {
+	  0% {
+		background-position: 200%;
+	  }
+	  50% {
+		background-position: 0%;
+	  }
+		100% {
+		background-position: 200%;
+	  }
+	}
+	div.blue-turn {
+	  animation: blue-turn 12s linear 0s infinite;
+	}
+	@keyframes green-turn {
+	  0% {
+		background-position: -200%;
+	  }
+	  50% {
+		background-position: 0%;
+	  }
+		100% {
+		background-position: -200%;
+	  }
+	}
+	div.green-turn {
+	  animation: green-turn 12s linear 0s infinite;
+	}
+	
+	@keyframes screw-down {
+	  0% {
+		transform: translateY(-110%);
+	  }
+	  50% {
+		transform: translateY(-40%);
+	  }
+		100% {
+		transform: translateY(-110%);
+	  }
+	}
+
+@keyframes screw-down-two {
+	  0% {
+		transform: translateY(-110%);
+	  }
+	  50% {
+		transform: translateY(-10%);
+	  }
+		100% {
+		transform: translateY(-110%);
+	  }
+	}
+	div.screw-down {
+	  animation: screw-down 12s ease-in-out 0s infinite;
+	}
+
+@media screen and (max-width:1500px) {
+	#screw-animation {
+		width: 60px;
+    padding: 0 31px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	#home-top-banner {
+    padding: 10px 0 60px;
+		height: auto;
+}
+	#home-top-banner .wpb_column:first-child {
+    padding-right: calc(10% + 76px);
+}
+	#home-top-banner .wpb_column:last-child {
+    position: absolute;
+		top:0;
+		right:0;
+}
+	#home-top-banner h1 {
+    font-size: 36px;
+    line-height: 44px;
+	}
+	#home-top-banner h4 {
+	  margin-top: 0px;
+		font-size: 20px;
+}
+	#screw-animation {
+    position: absolute;
+    right: 5%;
+		width: 36px;
+    padding: 0 20px;
+		transform: translateY(-10%);
+	}
+	div.screw-down {
+		animation: screw-down-two 6s ease-out 0s 1;
+	}
+
+	
+}
+
+/*owl carousel*/
+.owl-carousel .owl-stage {
+    display: flex;
+	  align-items: center;
+}
+#main-nav-mobi {
+    background-color: #12294a;
+
+}
+.owl-theme .owl-nav [class*="owl-"]:after {
+    color: #12294a;
+    border: 2px solid #12294a;
+}
+.bauer-image-box.style-3.has-number .number {
+    background-color: #12294a;
+}
+.related.products {
+  display: none;
+}
+.single-product .product_meta {
+   display: none;
+}
+
+.product_meta {
+    display: none;
+}
