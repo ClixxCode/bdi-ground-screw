@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'BasicUI';
-  src:  url('../font/basicui/BasicUI%EF%B9%96ceftyp.eot');
-  src:  url('../font/basicui/BasicUI%EF%B9%96ceftyp.eot#iefix') format('embedded-opentype'),
-    url('../font/basicui/BasicUI%EF%B9%96ceftyp.ttf') format('truetype'),
-    url('../font/basicui/BasicUI%EF%B9%96ceftyp.woff') format('woff'),
-    url('../font/basicui/BasicUI%EF%B9%96ceftyp.svg#BasicUI') format('svg');
+  src:  url('../font/basicui/BasicUI.eot');
+  src:  url('../font/basicui/BasicUI.eot#iefix') format('embedded-opentype'),
+    url('../font/basicui/BasicUI.ttf') format('truetype'),
+    url('../font/basicui/BasicUI.woff') format('woff'),
+    url('../font/basicui/BasicUI.svg#BasicUI') format('svg');
   font-weight: normal;
   font-style: normal;
 }
