@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'BauerIcons';
-  src:  url('bauericons/BauerIcons%EF%B9%96ceftyp.eot');
-  src:  url('bauericons/BauerIcons%EF%B9%96ceftyp.eot#iefix') format('embedded-opentype'),
-    url('bauericons/BauerIcons%EF%B9%96ceftyp.ttf') format('truetype'),
-    url('bauericons/BauerIcons%EF%B9%96ceftyp.woff') format('woff'),
-    url('bauericons/BauerIcons%EF%B9%96ceftyp.svg#BauerIcons') format('svg');
+  src:  url('bauericons/BauerIcons.eot');
+  src:  url('bauericons/BauerIcons.eot#iefix') format('embedded-opentype'),
+    url('bauericons/BauerIcons.ttf') format('truetype'),
+    url('bauericons/BauerIcons.woff') format('woff'),
+    url('bauericons/BauerIcons.svg#BauerIcons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
