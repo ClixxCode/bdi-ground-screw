@@ -45,7 +45,7 @@
 	line-height: 1.5em;
 }
 .product-detail-info-section-text ul, li {
-   list-style-type: none;
+   list-style-type: disc;
 	padding: 0px 0px 0px 0px;
     margin: 0 0 0px 0px;
 	line-height: 1.5em;
@@ -53,6 +53,10 @@
 	
 
 }
+li.address, li.phone {
+	list-style-type: none;
+}
+
 #top-bar {
     font-size: 14px;
     font-weight: 500;
