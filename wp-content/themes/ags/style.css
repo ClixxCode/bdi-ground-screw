@@ -44,9 +44,8 @@
     margin-bottom: 0.3125rem;
 	line-height: 1.5em;
 }
-.product-detail-info-section-text ul,
-.product-detail-info-section-text li {
-   list-style-type: disc;
+.product-detail-info-section-text ul, li {
+   list-style-type: none;
 	padding: 0px 0px 0px 0px;
     margin: 0 0 0px 0px;
 	line-height: 1.5em;
